@@ -1,7 +1,7 @@
 menu:
 - {name: 'ABOUT', url: '/#'}
 - {name: 'PUBLICATIONS', url: '/publications'}
-- {name: 'CV', url: 'https://minyoung-mia-kim.github.io/assets/doc/CV.pdf'}
+- {name: 'CV', url: '/assets/doc/CV.pdf'}
 
 # - {name: 'CONTACT', url: '/contact'}
 
