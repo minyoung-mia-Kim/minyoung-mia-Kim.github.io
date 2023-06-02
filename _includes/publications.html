@@ -1,0 +1,149 @@
+<style>
+  .pubs {
+    min-height: 145px;
+    position: relative;
+    margin-bottom: 6px;
+    padding: var(--gap);
+    background: var(--entry);
+    border-radius: var(--radius);
+    line-height: 1.4;
+    transition: transform .1s;
+    /* font-family: Geneva, sans-serif; */
+    font-family: Roboto, Halvetica, Arial, sans-serif;
+  }
+  
+  .pubs .teaser {
+    display: block;
+    float: left;
+    position: relative;
+    margin-right: var(--gap);
+    text-align: left;
+    /* width: 180px; */
+  }
+
+  .pubs .teaser img{
+    width: 100%;
+    min-width: 80px;
+    max-width: 140px;
+    margin-right: 15px;
+    vertical-align: middle;
+    border-style: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+  }
+  .pubs .contents{
+  display: block;
+
+  }
+  .contents .title, .author, .links, .place {
+    margin: 1px 0;
+    color: var(--secondary);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow: hidden;
+    display: -webkit-box;
+    display:contents;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.contents .place{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+
+}
+.contents p{
+  margin-bottom: 0px;
+}
+  .contents .links {
+    margin-top: 4px;
+    margin-bottom: -10px;
+    text-align: left;
+  }
+  .contents .links li {
+    display: inline-block;
+}
+.links li {
+    display: inline-block;
+    margin-inline-end: 3px;
+    margin-bottom: 5px;
+    padding-inline-start: 12px;
+    padding-inline-end: 12px;
+    background: #d6d6d6;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+}
+.contents li a{
+  display: block;
+    /* color: var(--secondary); */
+    font-size: 12px;
+    line-height: 25px;
+    color:#f0f0f0;
+    font-family: Roboto, Halvetica, Arial, sans-serif;
+    text-align: center;
+}
+.links li a:link {
+  text-decoration: none;
+}
+
+.links li a:visited {
+  text-decoration: none;
+}
+
+.links li a:hover {
+  text-decoration: underline;
+}
+
+.links li a:active {
+  text-decoration: underline;
+}
+</style>
+
+
+<div class="row g-5 mb-5">
+  <div>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
+    {% if page.title == "Home" %}
+      {% for item in site.data.publications.featured %}
+      <div class="pubs">
+        <div class="teaser"><img src="{{ site.github.url }}{{ item.teaser }}"></div>
+        <div class="contents">
+          <div class="title"><a href="{{ item.url }}">{{ item.name }}</a></div>
+          <div class="author">
+            <p>{{ item.author }}</p>
+          </div>
+          <div class="place">
+            <p><em>{{ item.booktitle }}</em>, {{ item.year }}</p>
+          </div>
+          <div class="links">
+            <li><a href="{{ item.url }}"> project page </a></li>
+            <li><a href="#"> paper </a> </li>
+            <li><a href="#"> supp </a></li>
+            <li><a href="#"> video </a> </li>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    {% else %}
+      {% for item in site.data.publications.index %}
+      <div class="pubs">
+        <div class="teaser"><img src="{{ site.github.url }}{{ item.teaser }}"></div>
+        <div class="contents">
+          <div class="title"><a href="{{ item.url }}">{{ item.name }}</a></div>
+          <div class="author">
+            <p>{{ item.author }}</p>
+          </div>
+          <div class="place">
+            <p><em>{{ item.booktitle }}</em>, {{ item.year }}</p>
+          </div>
+          <div class="links">
+            <li><a href="{{ item.url }}"> project page </a></li>
+            <li><a href="#"> paper </a> </li>
+            <li><a href="#"> supp </a></li>
+            <li><a href="#"> video </a> </li>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>

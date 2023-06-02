@@ -1,0 +1,46 @@
+menu:
+- {name: 'ABOUT', url: '/#'}
+- {name: 'PUBLICATIONS', url: '/publications'}
+- {name: 'CV', url: 'https://minyoung-mia-kim.github.io/assets/doc/CV.pdf'}
+
+# - {name: 'CONTACT', url: '/contact'}
+
+interests:
+- {keyword: 'Computer Graphics'}
+- {keyword: 'Human Computer Interaction'}
+- {keyword: 'Computational Design'}
+- {keyword: 'Outdoor Augmented Reality'}
+
+news:
+- {date: '<em>May 2023</em>', text: 'Congratulations 🎉 our team got accepted to CHI23 in Hamburg, Germany. Honored to present our work on their behalf.'}
+- {date: '<em>Aug 2021</em>', text: 'Will join DCXR Group in George Mason Universt starting to Fall 21.'}
+# - {date: 'July 2021', text: 'My short paper (Facial Geometry Synthesis Using Locally Weighted Autoencoder) got accepted at CGI2021'}
+
+honors:
+- {text: 'Best Paper Award, Korea Computer Graphics Society (KCGS), 2019'}
+
+services:
+- {text: ''}
+
+press:
+- {text: ''}
+
+people:
+- {name: 'Minyoung Kim', title: 'Ph.D. Student', department: 'Department of Computer Science', institution: 'George Mason University', institution_address: '4400 University Drive, Fairfax, VA', phone: '(000) 000-0000', email: 'mkim229@gmu.edu', office: 'Research Hall 405 in GMU', image: 'assets/images/realphoto-crop.jpg'}
+
+
+# courses:
+# - {name: 'Vector Calculus', url: 'vector-calculus'}
+# - {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
+# - {name: 'Stellar Structures', url: 'stellar-structures'}
+
+social:
+- {icon: 'github', link: 'https://github.com/minyoung-mia-kim'}
+# - {icon: 'twitter', link: 'https://twitter.com/paululele'}
+# - {icon: 'instagram', link: 'https://instagram.com/paululele'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/minyoung-kim-4361b711b/'}
+# - {icon: 'google-scholar', link: 'https://www.linkedin.com/in/minyoung-kim-4361b711b/'}
+
+
+contacts:
+- {name: 'Minyoung Kim', title: 'Ph.D. Student', department: 'Department of Computer Science', institution: 'George Mason University', institution_address: '4400 University Drive, Fairfax, VA', phone: '(000) 000-0000', email: 'mkim229@gmu.edu', office: 'Research Hall 405 in GMU', image: 'assets/images/realphoto-crop.jpg'}

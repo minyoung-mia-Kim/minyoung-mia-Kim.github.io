@@ -1,0 +1,58 @@
+featured:
+- {name: 'Location-Aware Adaptation of Augmented Reality Narratives', 
+author: 'Wanwan Li*, Changyang Li*, <b>Minyoung Kim</b>, Haikun Huang, Lap-Fai Yu', 
+booktitle: 'Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems',
+year: '2023',
+teaser: '/assets/images/teaser/chi23narratives.jpg',
+url: 'https://changyangli.github.io/projects/chi23navgraph/' ,
+paper: 'https://changyangli.github.io/assets/paper/chi23narratives.pdf', 
+supp: 'https://changyangli.github.io/assets/paper/chi23narratives_supp.pdf', 
+video: 'https://www.youtube.com/watch?v=32ZlTDLJwm4' 
+}
+- {name: 'Facial Geometry Synthesis Using Locally Weighted Autoencoder', 
+author: '<b>Minyoung Kim</b> and Young J. Kim',
+booktitle: 'Computer Graphics International Conference',
+year: '2021',
+teaser: '/assets/images/teaser/facesynthesis-teaser.png',
+url: 'http://graphics.ewha.ac.kr/localAE/',
+paper: 'http://graphics.ewha.ac.kr/localAE/assets/paper/CGI21_paper.pdf', 
+supp: '#', 
+video: 'https://www.youtube.com/watch?v=yPOW7YOzyUs'
+}
+
+index:
+- {name: 'Location-Aware Adaptation of Augmented Reality Narratives', 
+author: 'Wanwan Li*, Changyang Li*, <b>Minyoung Kim</b>, Haikun Huang, Lap-Fai Yu', 
+booktitle: 'Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems',
+year: '2023',
+teaser: '/assets/images/teaser/chi23narratives.jpg',
+url: 'https://changyangli.github.io/projects/chi23navgraph/',
+paper: 'https://changyangli.github.io/assets/paper/chi23narratives.pdf', 
+supp: 'https://changyangli.github.io/assets/paper/chi23narratives_supp.pdf', 
+video: 'https://www.youtube.com/watch?v=32ZlTDLJwm4' 
+ }
+
+- {name: 'Facial Geometry Synthesis Using Locally Weighted Autoencoder', 
+author: '<b>Minyoung Kim</b> and Young J. Kim',
+booktitle: 'Computer Graphics International Conference',
+year: '2021',
+teaser: '/assets/images/teaser/facesynthesis-teaser.png',
+url: 'http://graphics.ewha.ac.kr/localAE/',
+paper: 'http://graphics.ewha.ac.kr/localAE/assets/paper/CGI21_paper.pdf', 
+supp: '#', 
+video: 'https://www.youtube.com/watch?v=yPOW7YOzyUs'
+}
+
+- {name: 'Haptic Interfaces for Tangible Digital Painting in VR', 
+author: '<b>Minyoung Kim</b> and Young J. Kim',
+booktitle: 'Pacific Graphics',
+year: '2019',
+teaser: '/assets/images/teaser/haptingpainting-teaser.png',
+url: 'http://graphics.ewha.ac.kr/hvrpaint/',
+paper: 'http://journal.cg-korea.org/archive/view_article?pid=jkcgs-26-2-1', 
+supp: '#', 
+video: 'https://youtu.be/A7WPSKVV8Rg'
+}
+
+
+

@@ -1,22 +1,87 @@
 ---
-layout: archive
+layout: default
 ---
 
-{{ content }}
+<style>
+  div{
+    font-family: Roboto, Halvetica, Arial, sans-serif;
+  }
+  #bio img{
+    border-radius: 50%;
+  }
+  .col-md-4 img {
+    max-width: 250px;
+  }
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+  .news .li {
+    margin-top: 0px;
+  }
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+  .news,
+  .honors,
+  .services,
+  .press {
+    margin-top: 25px;
+  }
+</style>
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
+<!-- first page -->
+<div class="row g-5 mb-5" id="bio">
+  <div class="col-md-4">
+    <img src="{{ site.github.url }}/assets/images/realphoto-crop.jpg" alt="bio" width="100%">
+  </div>
+  <div class="col-md-8">
+    <h3 class="fw-bold">MINYOUNG KIM</h3>
+    {{ page.content }}
+    <br><br>
+    <h4 class="fw-bold">Reserach Interest</h4>
+    {% for keywords in site.data.settings.interests %}
+    {{ keywords.keyword }},
+    {% endfor %}
+    <br><br>
+  </div>
+  <div class="news">
+    <h4 class="fw-bold">News</h4>
+    {% for update in site.data.settings.news %}
+    <li><b>{{ update.date }}</b> {{ update.text }}</li>
+    {% endfor %}
+  </div>
+</div>
+
+{% include publications.html %}
+
+<!-- Honors -->
+<div class="honors">
+  <h4 class="fw-bold">Honors & Awards</h4>
+  {% for item in site.data.settings.honors %}
+  <li>{{ item.text }}</li>
   {% endfor %}
 </div>
 
-{% include paginator.html %}
+<!-- Services -->
+<div class="services">
+  <h4 class="fw-bold">Services</h4>
+  {% for item in site.data.settings.services %}
+  <li> {{ item.text }}</li>
+  {% endfor %}
+</div>
+
+
+<!-- Press -->
+<div class="press">
+  <h4 class="fw-bold">Press</h4>
+  {% for item in site.data.settings.press %}
+  <li> {{ item.text }}</li>
+  {% endfor %}
+</div>
+
+
+<!-- post -->
+<!-- <div class="row g-5 mb-5">
+  <div class="col-md-12">
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Post Updates</h3>
+    {% for post in site.posts %}
+    <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
+    {% endfor %}
+  </div>
+</div> -->
