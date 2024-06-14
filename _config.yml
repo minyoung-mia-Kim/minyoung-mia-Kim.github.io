@@ -2,7 +2,7 @@
 url: "https://minyoung-mia-kim.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "MINYOUNG KIM" # the name of your site, e.g. ACME Corp.
-description: "👩‍💻 Ph.D. student 💻 @ George Mason Univeristy"
+# description: 
 cc: by
 
 # author
