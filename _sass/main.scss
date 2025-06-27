@@ -53,17 +53,19 @@ body a {
   margin-right: 0;
   text-align: left;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
 .pubs .teaser img {
   width: 100%;
   max-width: 160px;
-  height: 100px;
+  aspect-ratio: 4 / 3;
+  height: auto;
   object-fit: cover;
   margin-bottom: 0;
   border-radius: 12px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  align-self: stretch;
 }
 .pubs .contents {
   flex: 1 1 0%;
@@ -103,7 +105,9 @@ body a {
 }
 .contents .links {
   margin-top: 6px;
-  padding-right: 0%;
+  /* Remove right padding and override any parent padding */
+  padding-right: 0 !important;
+  padding-left: 0 !important;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -154,6 +158,7 @@ body a {
 .dropdown-btn .triangle {
   font-size: 1.1em;
   transition: transform .2s;
+  text-decoration: none;
 }
 .pubs-list { display: none; }
 .pubs-list.active { display: block; }
@@ -176,4 +181,20 @@ body a {
 .services,
 .press {
   margin-top: 25px;
+}
+
+// Footer styles
+footer .social-media-icons a {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .social-media-icons img {
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+  filter: invert(36%) sepia(61%) saturate(453%) hue-rotate(176deg) brightness(92%) contrast(92%);
+}
+footer .social-media-icons i {
+  font-size: 1.5em;
+  vertical-align: middle;
 }

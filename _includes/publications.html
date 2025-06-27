@@ -3,8 +3,8 @@
 <div class="row g-5 mb-5">
   <div>
     <button class="dropdown-btn" onclick="togglePubsList()" id="pubsDropdownBtn">
-      <span id="pubsDropdownText">Show All Publications</span>
       <span class="triangle" id="pubsDropdownTriangle">&#x25BC;</span>
+      <span id="pubsDropdownText">Show All Publications</span>
     </button>
     <div id="featuredPubs" class="pubs-list active">
       {% for item in site.data.publications.featured %}

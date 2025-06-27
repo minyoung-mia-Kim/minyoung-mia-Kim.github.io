@@ -4,7 +4,7 @@
       {% for item in site.data.settings.social %}
         <a href="{{ item.link }}" class="ms-3 fs-5">
           {% if item.custom and item.img %}
-            <img src="{{ item.img }}" alt="{{ item.icon }}" style="height:1.5em;vertical-align:middle;" />
+            <img src="{{ item.img }}" alt="{{ item.icon }}" />
           {% else %}
             <i class="fab fa-{{ item.icon }}"></i>
           {% endif %}
