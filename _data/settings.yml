@@ -5,10 +5,10 @@ menu:
 
 # - {name: 'CONTACT', url: '/contact'}
 
-interests:
-- {keyword: 'Augmented Reality in Outdoor'}
-- {keyword: 'Human and Scene Understanding in Context'}
-- {keyword: 'Storytelling Generation and Representation'}
+# interests:
+# - {keyword: 'Augmented Reality in Outdoor'}
+# - {keyword: 'Human and Scene Understanding in Context'}
+# - {keyword: 'Storytelling Generation and Representation'}
 
 news:
 - {date: '<em>May 2024</em>', text: 'Congratulations 🎉 our paper got conditionally accepted to Siggraph 24 in Denver, USA. See you at Denver!'}

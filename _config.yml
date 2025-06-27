@@ -13,3 +13,7 @@ shortbio: "test shortbio"
 github_username: "minyoung-mia-kim.github.io"
 #linkedin_username:
 
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-0SSNBS6L3P"
