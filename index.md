@@ -11,4 +11,4 @@ I'm a 4th year Ph.D. student at George Mason University, working with <a href="h
 <br />
 My research focuses on AR/VR/XR experience synthesis and representation, grounded in in-context human and scene understanding. I’m passionate about embodying what we imagine on top of what we perceive, seamlessly blending into the real world.
 
-{% include custom-footer.html %}
+
