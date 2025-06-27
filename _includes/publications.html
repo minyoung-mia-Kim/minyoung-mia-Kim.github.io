@@ -2,7 +2,10 @@
 
 <div class="row g-5 mb-5">
   <div>
-    <button class="dropdown-btn" onclick="togglePubsList()" id="pubsDropdownBtn">Show All Publications</button>
+    <button class="dropdown-btn" onclick="togglePubsList()" id="pubsDropdownBtn">
+      <span id="pubsDropdownText">Show All Publications</span>
+      <span class="triangle" id="pubsDropdownTriangle">&#x25BC;</span>
+    </button>
     <div id="featuredPubs" class="pubs-list active">
       {% for item in site.data.publications.featured %}
       <div class="pubs">
@@ -16,10 +19,18 @@
             <p><em>{{ item.booktitle }}</em>, {{ item.year }}</p>
           </div>
           <ul class="links">
-            <li><a href="{{ item.url }}">Project Page</a></li>
-            <li><a href="#">Paper</a></li>
-            <li><a href="#">Supp</a></li>
-            <li><a href="#">Video</a></li>
+            <li><a href="{{ item.url }}"><span class="icon">
+                          <i class="fas fa-link"></i>
+                        </span>Project Page</a></li>
+            <li><a href="{{ item.paper }}"><span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>Paper</a></li>
+            <li><a href="{{ item.supp }}"><span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>Supp</a></li>
+            <li><a href="{{ item.video }}"><span class="icon">
+                          <i class="fas fa-video"></i>
+                        </span>Video</a></li>
           </ul>
         </div>
       </div>
@@ -38,10 +49,18 @@
             <p><em>{{ item.booktitle }}</em>, {{ item.year }}</p>
           </div>
           <ul class="links">
-            <li><a href="{{ item.url }}">Project Page</a></li>
-            <li><a href="#">Paper</a></li>
-            <li><a href="#">Supp</a></li>
-            <li><a href="#">Video</a></li>
+            <li><a href="{{ item.url }}"><span class="icon">
+                          <i class="fas fa-link"></i>
+                        </span>Project Page</a></li>
+            <li><a href="{{ item.paper }}"><span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>Paper</a></li>
+            <li><a href="{{ item.supp }}"><span class="icon">
+                          <i class="fas fa-file-alt"></i>
+                        </span>Supp</a></li>
+            <li><a href="{{ item.video }}"><span class="icon">
+                          <i class="fas fa-video"></i>
+                        </span>Video</a></li>
           </ul>
         </div>
       </div>
@@ -51,15 +70,18 @@
       function togglePubsList() {
         var featured = document.getElementById('featuredPubs');
         var all = document.getElementById('allPubs');
-        var btn = document.getElementById('pubsDropdownBtn');
+        var btnText = document.getElementById('pubsDropdownText');
+        var triangle = document.getElementById('pubsDropdownTriangle');
         if (featured.classList.contains('active')) {
           featured.classList.remove('active');
           all.classList.add('active');
-          btn.textContent = 'Show Featured Only';
+          btnText.textContent = 'Show Featured Only';
+          triangle.innerHTML = '&#x25B2;'; // Up triangle
         } else {
           featured.classList.add('active');
           all.classList.remove('active');
-          btn.textContent = 'Show All Publications';
+          btnText.textContent = 'Show All Publications';
+          triangle.innerHTML = '&#x25BC;'; // Down triangle
         }
       }
     </script>

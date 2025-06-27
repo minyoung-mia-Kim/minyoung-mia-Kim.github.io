@@ -49,7 +49,7 @@ body a {
   transform: translateY(-2px) scale(1.01);
 }
 .pubs .teaser {
-  flex: 0 0 120px;
+  flex: 0 0 160px;
   margin-right: 0;
   text-align: left;
   display: flex;
@@ -58,7 +58,7 @@ body a {
 }
 .pubs .teaser img {
   width: 100%;
-  max-width: 120px;
+  max-width: 160px;
   height: 100px;
   object-fit: cover;
   margin-bottom: 0;
@@ -99,10 +99,11 @@ body a {
   font-family: 'Times New Roman', Times, serif;
   font-size: 1rem;
   color: $pubsPlace;
-  margin-bottom: 4px;
+  // margin-bottom: 4px;
 }
 .contents .links {
   margin-top: 6px;
+  padding-right: 0%;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -119,7 +120,7 @@ body a {
   font-size: 0.93rem;
   font-family: inherit;
   padding: 4px 14px;
-  border-radius: 13px;
+  border-radius: 15px;
   text-align: center;
   text-decoration: none;
   transition: background .2s, color .2s;
@@ -131,18 +132,28 @@ body a {
   text-decoration: underline;
 }
 .dropdown-btn {
-  background: $pubsBtnBg;
-  color: $pubsBtnText;
+  background: none;
+  color: $linkColor;
   border: none;
-  border-radius: 8px;
-  padding: 8px 18px;
-  font-size: 1rem;
+  border-radius: 0;
+  padding: 0;
+  font-size: 1.1rem;
   margin-bottom: 18px;
   cursor: pointer;
-  transition: background .2s;
+  transition: color .2s;
+  text-decoration: underline;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
 }
 .dropdown-btn:hover, .dropdown-btn:focus {
-  background: $pubsBtnHoverBg;
+  color: $linkHoverColor;
+  text-decoration: underline;
+}
+.dropdown-btn .triangle {
+  font-size: 1.1em;
+  transition: transform .2s;
 }
 .pubs-list { display: none; }
 .pubs-list.active { display: block; }
