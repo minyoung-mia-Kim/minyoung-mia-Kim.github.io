@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 
-$backgroundColor: #f7f7fa;
-$bodyColor: #22223b;
+// Color Variables
+$backgroundColor: #f7f7fa;      // General page background
+$bodyColor: #22223b;           // Main text color
+$linkColor: #4886c4;           // Link color (default)
+$linkHoverColor: #1a4e8a;      // Link color on hover
+$pubsBg: #fff;                 // Publication card background
+$pubsShadow: rgba(72,134,196,0.07);        // Publication card shadow (default)
+$pubsShadowHover: rgba(72,134,196,0.18);   // Publication card shadow (hover)
+$pubsBtnBg: #4886c4;           // Button background in publications
+$pubsBtnHoverBg: #1a4e8a;      // Button background on hover in publications
+$pubsBtnText: #fff;            // Button text color in publications
+$pubsPlace: #6c757d;           // Venue/journal text color in publications
+$pubsAuthor: #555;             // Author text color in publications
+
 $bodyFont: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$linkColor: #4886c4 !important;
 
 body {
   background: $backgroundColor;
@@ -15,4 +26,143 @@ body {
 
 body a {
   color: $linkColor;
+}
+
+// Publications section styles
+.pubs {
+  display: flex;
+  align-items: flex-start;
+  min-height: 145px;
+  position: relative;
+  margin-bottom: 18px;
+  padding: 1.2rem 1.5rem;
+  background: $pubsBg;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px $pubsShadow;
+  line-height: 1.5;
+  transition: box-shadow .2s, transform .2s;
+  gap: 1.5rem;
+  font-family: $bodyFont;
+}
+.pubs:hover {
+  box-shadow: 0 4px 16px $pubsShadowHover;
+  transform: translateY(-2px) scale(1.01);
+}
+.pubs .teaser {
+  flex: 0 0 120px;
+  margin-right: 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pubs .teaser img {
+  width: 100%;
+  max-width: 120px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 0;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.pubs .contents {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contents .title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: $bodyColor;
+  margin-bottom: 2px;
+  line-height: 1.3;
+  font-family: inherit;
+}
+.contents .title a {
+  color: $linkColor;
+  text-decoration: none;
+  transition: color .2s;
+  font-family: inherit;
+}
+.contents .title a:hover {
+  color: $linkHoverColor;
+  text-decoration: underline;
+}
+.contents .author {
+  color: $pubsAuthor;
+  font-size: 0.98rem;
+  margin-bottom: 2px;
+  font-family: inherit;
+}
+.contents .place {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  color: $pubsPlace;
+  margin-bottom: 4px;
+}
+.contents .links {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.contents .links li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.links li a {
+  display: inline-block;
+  background: $pubsBtnBg;
+  color: $pubsBtnText;
+  font-size: 0.93rem;
+  font-family: inherit;
+  padding: 4px 14px;
+  border-radius: 13px;
+  text-align: center;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+  box-shadow: 0 1px 2px $pubsShadow;
+}
+.links li a:hover, .links li a:focus {
+  background: $pubsBtnHoverBg;
+  color: $pubsBtnText;
+  text-decoration: underline;
+}
+.dropdown-btn {
+  background: $pubsBtnBg;
+  color: $pubsBtnText;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  cursor: pointer;
+  transition: background .2s;
+}
+.dropdown-btn:hover, .dropdown-btn:focus {
+  background: $pubsBtnHoverBg;
+}
+.pubs-list { display: none; }
+.pubs-list.active { display: block; }
+
+// Home page specific styles
+#bio img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.col-md-4 img {
+  max-width: 250px;
+}
+.news .li {
+  margin-top: 0px;
+}
+.news,
+.honors,
+.services,
+.press {
+  margin-top: 25px;
 }

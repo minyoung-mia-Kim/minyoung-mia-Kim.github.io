@@ -2,35 +2,7 @@
 layout: default
 ---
 
-<style>
-  div{
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-  }
-  h4{
-    color:rgb(72, 134, 196)
-  }
-  #bio img{
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .col-md-4 img {
-    max-width: 250px;
-  }
-
-  .news .li {
-    margin-top: 0px;
-  }
-
-  .news,
-  .honors,
-  .services,
-  .press {
-    margin-top: 25px;
-  }
-</style>
+<!-- Styles moved to main.scss for maintainability -->
 
 <!-- first page -->
 <div class="row g-5 mb-5" id="bio">
@@ -41,11 +13,13 @@ layout: default
     <h3 class="fw-bold">MINYOUNG KIM</h3>
     {{ page.content }}
     <br><br>
-    <h4 class="fw-bold">Reserach Interest</h4>
+    {% if site.data.settings.interests and site.data.settings.interests.size > 0 %}
+    <h4 class="fw-bold">Research Interest</h4>
     {% for keywords in site.data.settings.interests %}
-    {{ keywords.keyword }},
+      {{ keywords.keyword }}{% unless forloop.last %}, {% endunless %}
     {% endfor %}
     <br><br>
+    {% endif %}
   </div>
   <div class="news">
     <h4 class="fw-bold">News</h4>

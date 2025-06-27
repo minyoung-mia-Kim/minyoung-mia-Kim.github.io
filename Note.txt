@@ -1,0 +1,9 @@
+publications.html → Editing the design and layout for the publication list. This file controls how each publication is displayed, including the HTML structure and CSS styles for the publications section.
+
+home.html → Editing the layout and logic for your home page. This file manages the arrangement of sections like bio, research interests, news, and how/when they are shown.
+
+main.scss → Editing the main site-wide styles, including background color, text color, font family, and general typography for the whole site.
+
+custom.html → Adding or removing custom HTML in the <head> of your site, such as Google Fonts imports or favicon links.
+
+publications.md → The Markdown file that serves as the entry point for your publications page, specifying which layout to use (e.g., layout: publications).
