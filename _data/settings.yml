@@ -41,7 +41,7 @@ social:
 # - {icon: 'twitter', link: 'https://twitter.com/paululele'}
 # - {icon: 'instagram', link: 'https://instagram.com/paululele'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/minyoung-kim-4361b711b/'}
-- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?hl=en&user=YR2fdzwAAAAJ', custom: true, img: 'assets/icons/icons8-google-scholar.svg'}
+- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?hl=en&user=YR2fdzwAAAAJ', img: 'assets/icons/icons8-google-scholar.svg'}
 
 
 contacts:
