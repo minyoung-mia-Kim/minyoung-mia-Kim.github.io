@@ -12,8 +12,8 @@ menu:
 
 news:
 - {date: '<em>May 2024</em>', text: 'Congratulations 🎉 our paper got conditionally accepted to Siggraph 24 in Denver, USA. See you at Denver!'}
-- {date: '<em>May 2023</em>', text: 'Congratulations 🎉 our team got accepted to CHI23 in Hamburg, Germany. Honored to present our work on their behalf.'}
-- {date: '<em>Aug 2021</em>', text: 'Will join DCXR Group in George Mason Universt starting to Fall 21.'}
+- {date: '<em>May 2023</em>', text: 'Congratulations 🎉 our team got accepted to CHI23 in Hamburg, Germany. Honored to present our work on behalf.'}
+- {date: '<em>Aug 2021</em>', text: 'Will join DCXR Group in George Mason University starting to Fall 21.'}
 # - {date: 'July 2021', text: 'My short paper (Facial Geometry Synthesis Using Locally Weighted Autoencoder) got accepted at CGI2021'}
 
 honors:
