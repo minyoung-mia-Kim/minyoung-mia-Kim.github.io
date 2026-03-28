@@ -1,0 +1,102 @@
+// 저자별 홈페이지 링크 설정
+const authorLinks = {
+  "Minyoung Kim": "https://minyoung-mia-kim.github.io/",
+  "Rawan Alghofaili": "https://rawanmg.com/",
+  "Changyang Li": "https://changyangli.github.io/",
+  "Cuong Nguyen": "https://cuongnd.com/",
+  "Lap-Fai Yu": "https://cs.gmu.edu/~fyu/",
+  "Young J. Kim": "https://craigyuyu.github.io/home/index.html"
+}
+
+const paperData = [
+  //     {
+  //   id: "sig26RoleAware",
+  //   year: "2026",
+  //   selected: true,
+  //   venue_type: "conference",
+  //   topics: ["graphics", "all"],
+  //   name: "Role-Aware Virtual Agents for Navigational Interaction guided by a Multimodal Large Language Model",
+  //   author: "<strong>Minyoung Kim</strong>, Changyang Li, Cuong Nguyen, Lap-Fai Yu",
+  //   booktitle: "ACM SIGGRAPH ",
+  //   teaser: "data\\images\\teaser\\comingsoon.png",
+  //   url: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/",
+  //   paper: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/",
+  //   supp: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/",
+  //   video: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/"
+  // },
+    {
+    id: "ismar25craft",
+    year: "2025",
+    selected: true,
+    venue_type: "conference",
+    topics: ["graphics", "all"],
+    name: "Crafting Dynamic Virtual Activities with Advanced Multimodal Models",
+    author: " Changyang Li, Qingan Yan, <strong>Minyoung Kim</strong>, Zhan Li, Yi Xu, Lap-Fai Yu",
+    booktitle: "IEEE International Symposium on Mixed and Augmented Reality (ISMAR) ",
+    teaser: "data\\images\\teaser\\llm_activity.jpg",
+    url: "https://minyoung-mia-kim.github.io/projects/ismar25Crafting/index.html",
+    paper: "https://minyoung-mia-kim.github.io/projects/ismar25Crafting/static/pdfs/main.pdf",
+    supp: "https://minyoung-mia-kim.github.io/projects/ismar25Crafting/static/pdfs/supp.pdf",
+    video: "https://youtu.be/taut6QQVEio"
+  },
+  {
+    id: "sig24ardragon",
+    year: "2024",
+    selected: true,
+    venue_type: "top",
+    topics: ["ar-vr", "graphics", "all"],
+    name: "Dragon’s Path: Synthesizing User-Centered Flying Creature Animation Paths for Outdoor Augmented Reality Experiences",
+    author: "<strong>Minyoung Kim</strong>, Rawan Alghofaili, Changyang Li, Lap-Fai Yu",
+    booktitle: "ACM SIGGRAPH",
+    teaser: "data\\images\\teaser\\sig24ardragon.jpg",
+    url: "https://minyoung-mia-kim.github.io/projects/sig24ardragon/index.html",
+    paper: "https://minyoung-mia-kim.github.io/projects/sig24ardragon/static/pdfs/main.pdf",
+    supp: "https://minyoung-mia-kim.github.io/projects/sig24ardragon/static/pdfs/supp.pdf",
+    video: "https://www.youtube.com/watch?v=PG0O3kgjNLU"
+  },
+  {
+    id: "chi23narratives",
+    year: "2023",
+    selected: true,
+    venue_type: "top",
+    topics: ["ar-vr", "hci", "all"],
+    name: "Location-Aware Adaptation of Augmented Reality Narratives",
+    author: "Wanwan Li*, Changyang Li*, <strong>Minyoung Kim</strong>, Haikun Huang, Lap-Fai Yu",
+    booktitle: "Proceedings of the ACM Conference on Human Factors in Computing Systems",
+    teaser: "data\\images\\teaser\\chi23narratives.jpg",
+    url: "https://changyangli.github.io/projects/chi23navgraph/",
+    paper: "https://changyangli.github.io/assets/paper/chi23narratives.pdf",
+    supp: "https://changyangli.github.io/assets/paper/chi23narratives_supp.pdf",
+    video: "https://www.youtube.com/watch?v=32ZlTDLJwm4"
+  },
+  {
+    id: "cgi21face",
+    year: "2021",
+    selected: false,
+    venue_type: "conference",
+    topics: ["graphics", "all"],
+    name: "Facial Geometry Synthesis Using Locally Weighted Autoencoder",
+    author: "<strong>Minyoung Kim</strong> and Young J. Kim",
+    booktitle: "Computer Graphics International Conference",
+    teaser: "data\\images\\teaser\\facesynthesis-teaser.png",
+    url: "http://graphics.ewha.ac.kr/localAE/",
+    paper: "http://graphics.ewha.ac.kr/localAE/assets/paper/CGI21_paper.pdf",
+    supp: "#",
+    video: "https://www.youtube.com/watch?v=yPOW7YOzyUs"
+  },
+  {
+    id: "kcsg19haptic",
+    year: "2019",
+    selected: false,
+    venue_type: "journal",
+    topics: ["haptics", "ar-vr", "all"],
+    name: "Haptic Interfaces for Tangible Digital Painting in VR",
+    author: "<strong>Minyoung Kim</strong> and Young J. Kim",
+    booktitle: "Pacific Graphics",
+    teaser: "data\\images\\teaser\\haptingpainting-teaser.png",
+    url: "http://graphics.ewha.ac.kr/hvrpaint/",
+    paper: "http://journal.cg-korea.org/archive/view_article?pid=jkcgs-26-2-1",
+    supp: "#",
+    video: "https://youtu.be/A7WPSKVV8Rg"
+  }
+];

@@ -1,0 +1,413 @@
+:root {
+  /* 홈페이지 메인 블루 컬러를 변수로 등록 */
+  --color-primary: #1772d0; 
+  --color-hover: #f09228; /* 링크 호버 색상 (주황 계열) */
+  --color-latest: #fa4828; /* 최근 논문 강조 색상 */
+  --color-all: hsl(210, 100%, 69%); /* 전체 카테고리 색상 */
+  --color-ar-vr: hsl(58, 74%, 65%); /* AR/VR 카테고리 색상 (주황 계열) */
+  --color-graphics: hsl(257, 78%, 64%); /* Graphics 카테고리 색상 (파랑 계열) */
+  --color-hci: hsl(125, 44%, 37%); /* HCI 카테고리 색상 (초록 계열) */
+  --color-haptics: hsl(61, 75%, 64%); /* Haptics 카테고리 색상 (노랑/라임 계열) */
+  --color-others: #666; /* 기타 카테고리 색상 (회색) */
+}
+
+/* 카테고리별 HSL 색상 매칭 */
+.all-color      { background-color: var(--color-all); }  /* 기존 .all */
+.ar-vr-color    { background-color: var(--color-ar-vr); }  /* 기존 .so (주황 계열) */
+.graphics-color { background-color: var(--color-graphics); } /* 기존 .npr (파랑 계열) */
+.hci-color      { background-color: var(--color-hci); }  /* 기존 .ce (초록 계열) */
+.haptics-color  { background-color: var(--color-haptics); }   /* 기존 .sv (노랑/라임 계열) */
+
+/* 혹시 나중에 추가될 수 있는 범용 클래스 */
+.others-color   { background-color: var(--color-others); }
+
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* 전체 레이아웃 상단 여백 추가 */
+body {
+  padding-top: 50px; /* 30px ~ 60px 사이에서 원하는 만큼 조절하세요 */
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: var(--color-hover);
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Google Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 15px /*전체폰트 사이즈 */
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+}
+
+heading {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700
+}
+
+name {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+.wrap {
+  display: inline-block;
+}
+
+.intro {
+  padding:20px;
+  width:68%;
+  vertical-align:middle;
+}
+
+.headshort {
+  padding:20px;
+  width:35%;
+  max-width:35%;
+}
+
+@media (max-width: 675px) {
+  .intro {
+    padding: 20px 5px 20px 20px;
+  }
+
+  .headshort {
+    padding: 20px 2px 20px 5px;
+  }
+}
+
+.news_date1 {
+  padding: 0px 3px 0px 20px;
+  width: 0px;
+  vertical-align: top;
+  line-height: 1.5em;
+  color: darkblue;
+  white-space: nowrap;
+}
+
+.news_date2 {
+  padding: 0px 10px 0px 0px;
+  width: 0px;
+  vertical-align: top;
+  text-align: right;
+  line-height: 1.5em;
+  color: darkblue;
+  white-space: nowrap;
+}
+
+.news_details {
+  padding: 0px 20px 0px 10px;
+  vertical-align: top;
+  line-height: 1.5em;
+}
+
+.news_conf {
+  color: darkblue;
+}
+
+.news_oral {
+  color: darkblue;
+}
+
+.paper_tb {
+  padding: 10px 12px 10px 20px;
+  width: 30%;
+  vertical-align: top;
+}
+
+.paper_tb img, 
+.paper_tb video {
+  width: 100%;           /* 가로 길이는 부모 칸에 맞춤 */
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;     /* ⭐ 비율을 유지하며 고정된 영역을 가득 채움 (중요!) */
+  object-position: center; /* 이미지의 중앙이 보이도록 설정 */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35); /* 원본 섀도우 수치 */
+  display: block;
+}
+
+.paper_conf {
+  font-style: italic;
+}
+
+.paper_spotlight {
+  color: var(--color-latest);
+}
+
+.tb_one {
+  width: 100%;
+  position: relative;
+}
+
+.tb_two {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.paper_details {
+  padding: 10px 20px 10px 12px;
+  width: 70%;
+  vertical-align: top;
+  line-height: 20px;
+}
+
+@media (max-width: 675px) {
+  .paper_entry td {
+    display: block;
+    float: left;
+  }
+
+  .paper_tb {
+    padding: 12px 20px 0px 20px;
+    width: 90%;
+  }
+
+  .paper_details {
+    padding: 12px 20px 12px 20px;
+    width: 90%;
+  }
+}
+
+.service_name {
+  padding: 0px 10px 0px 20px;
+  width: 0px;
+  vertical-align: top;
+  line-height: 1.5em;
+  color: darkblue;
+  white-space: nowrap;
+}
+
+
+.award_name {
+  padding: 0px 10px 0px 20px;
+  width: 0px;
+  vertical-align: top;
+  line-height: 1.5em;
+  color: black;
+  white-space: nowrap;
+}
+
+.contribution_name {
+  padding: 0px 10px 0px 20px;
+  width: 0px;
+  vertical-align: top;
+  line-height: 1.5em;
+  color: black;
+  white-space: nowrap;
+}
+
+.teaching_name {
+  padding: 0px 10px 0px 20px;
+  width: 0px;
+  vertical-align: top;
+  line-height: 1.5em;
+  color: black;
+  white-space: nowrap;
+}
+
+.service_details {
+  padding: 0px 20px 0px 10px;
+  vertical-align: top;
+  line-height: 1.5em;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.topic-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.best-paper-badge {
+  display: inline-block;
+  background-color: #28a745; /* Green background */
+  color: #ffffff;           /* White text */
+  padding: 2px 6px;         /* Spacing inside the label */
+  border-radius: 4px;       /* Rounded corners */
+  font-size: 0.9em;         /* Slightly smaller text */
+  font-weight: bold;        /* Make the text stand out */
+  margin-left: 6px;         /* Optional spacing before the label */
+}
+
+/* butten 스타일 */
+.custom-btn {
+  display: inline-block; /* 여백이 정확히 먹히도록 추가 */
+  margin-top: 15px;      /* 15px에서 25px 정도로 늘림 */
+  padding: 6px 18px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #333;
+  background: white;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.custom-btn:hover {
+  background: #333;
+  color: white;
+}
+/* 배지가 아주 살짝 숨쉬듯 움직이는 효과 */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.new-badge {
+  display: inline-block;
+  
+  /* 1. 배경 없애고 텍스트 색상 설정 */
+  background-color: transparent; /* 배경 투명 */
+  color: var(--color-latest);   /* 텍스트는 메인 파란색 */
+  
+  /* 2. 하얀색 테두리 (Outline) - text-shadow 활용 */
+  text-shadow: 
+    -1px -1px 0 #fff,  
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff; /* 4방향으로 1px 하얀색 그림자를 줘서 테두리 효과 */
+     
+  /* 3. 연한 그림자 (Drop-shadow) */
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2)); /* 텍스트와 테두리 전체에 은은한 그림자 */
+  
+  /* 4. 폰트 및 여백 (기존 유지) */
+  font-family: 'Lato', sans-serif;
+  font-size: 11px; /* 텍스트만 있으니 1px만 크게 */
+  font-weight: bold;
+  padding: 0px 4px; /* 배경이 없으니 패딩 축소 */
+  vertical-align: middle;
+  margin-left: 5px;
+  position: relative;
+  top: -2px;
+  letter-spacing: 1px; /* 글자 사이 간격 살짝 넓힘 */
+  
+  /* 5. 애니메이션 (유지) */
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* ==========================================================================
+   프로필 사진 - 동그라미 + 그림자 디자인
+   ========================================================================== */
+
+.profile-photo {
+  width: 100%;           /* 가로 길이는 부모 칸에 맞춤 */
+  max-width: 100%;       /* 최대 너비 제한 */
+  height: auto;          /* 가로 비율에 맞춰 세로 높이 자동 조절 */
+  aspect-ratio: 1 / 1;   /* ⭐ 정사각 비율 강제 (동그라미의 핵심) */
+  object-position: 50% 10%; /* 가로 50%, 세로 40%로 위로 살짝 */
+  object-fit: cover;     /* ⭐ 비율 유지하며 채우기 (찌그러짐 방지) */
+  display: block;        /* 여백 문제 방지 */
+  border-radius: 50%;    /* ⭐ 50% 값을 줘서 완벽한 원형으로 만듦 */
+  overflow: hidden;      /* 테두리 밖으로 나가는 부분 숨김 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 하단으로 4px, 흐림 8px인 연한 그림자 */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 마우스를 올렸을 때 살짝 커지고 그림자가 짙어지는 효과 */
+.profile-photo:hover {
+  transform: scale(1.03); /* 3% 살짝 확대 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 그림자를 더 깊고 짙게 */
+}
