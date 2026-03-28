@@ -9,21 +9,35 @@ const authorLinks = {
 }
 
 const paperData = [
-  //     {
-  //   id: "sig26RoleAware",
-  //   year: "2026",
-  //   selected: true,
-  //   venue_type: "conference",
-  //   topics: ["graphics", "all"],
-  //   name: "Role-Aware Virtual Agents for Navigational Interaction guided by a Multimodal Large Language Model",
-  //   author: "<strong>Minyoung Kim</strong>, Changyang Li, Cuong Nguyen, Lap-Fai Yu",
-  //   booktitle: "ACM SIGGRAPH ",
-  //   teaser: "data\\images\\teaser\\comingsoon.png",
-  //   url: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/",
-  //   paper: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/",
-  //   supp: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/",
-  //   video: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/"
-  // },
+      {
+    id: "sig26RoleAware",
+    year: "2026",
+    selected: true,
+    venue_type: "top",
+    topics: ["graphics", "all"],
+    name: "Role-Aware Virtual Agents for Navigational Interaction guided by a Multimodal Large Language Model",
+    author: "<strong>Minyoung Kim</strong>, Changyang Li, Cuong Nguyen, Lap-Fai Yu",
+    booktitle: "ACM SIGGRAPH (Conditionally accepted)",
+    teaser: "data\\images\\teaser\\comingsoon.png",
+    url: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/",
+    paper: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/",
+    supp: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/",
+    video: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/"
+  },
+      {
+    id: "ismar25craft",
+    year: "2025",
+    selected: true,
+    venue_type: "others",
+    topics: ["ar-vr", "all"],
+    name: "Multi-Player VR Marble Run Game for Physics Co-Learning",
+    author: "William Ranc, Thanh Nguyen, Liuchuan Yu, Yongqi Zhang, <strong>Minyoung Kim</strong>, Haikun Huang, Lap-Fai Yu",
+    booktitle: "IEEE International Symposium on Mixed and Augmented Reality (ISMAR) ",
+    teaser: "data\\images\\teaser\\ismar25demo.png",
+    url: "https://gmudcxr.wixsite.com/vr-planet",
+    paper: "https://craigyuyu.github.io/home/papers/ismar25demo.pdf",
+    video: "https://www.youtube.com/watch?v=aGx3QvT4ow8"
+  },
     {
     id: "ismar25craft",
     year: "2025",
