@@ -3,17 +3,19 @@
   --color-primary: #1772d0; 
   --color-hover: #f09228; /* 링크 호버 색상 (주황 계열) */
   --color-latest: #fa4828; /* 최근 논문 강조 색상 */
-  --color-all: hsl(210, 100%, 69%); /* 전체 카테고리 색상 */
-  --color-ar-vr: hsl(58, 74%, 65%); /* AR/VR 카테고리 색상 (주황 계열) */
-  --color-graphics: hsl(257, 78%, 64%); /* Graphics 카테고리 색상 (파랑 계열) */
-  --color-hci: hsl(125, 44%, 37%); /* HCI 카테고리 색상 (초록 계열) */
-  --color-haptics: hsl(61, 75%, 64%); /* Haptics 카테고리 색상 (노랑/라임 계열) */
+  --color-all: #0064d6; /* 전체 카테고리 색상 */
+  --color-agent: #ff8a8a; /* Agent 카테고리 색상 (주황 계열) */
+  --color-ar-vr: #64c9e8; /* AR/VR 카테고리 색상 (주황 계열) */
+  --color-graphics: #9ed5f5; /* Graphics 카테고리 색상 (파랑 계열) */
+  --color-hci: #b2dd61; /* HCI 카테고리 색상 (초록 계열) */
+  --color-haptics: #b8e0ac; /* Haptics 카테고리 색상 (노랑/라임 계열) */
   --color-others: #666; /* 기타 카테고리 색상 (회색) */
 }
 
 /* 카테고리별 HSL 색상 매칭 */
 .all-color      { background-color: var(--color-all); }  /* 기존 .all */
 .ar-vr-color    { background-color: var(--color-ar-vr); }  /* 기존 .so (주황 계열) */
+.agent-color   { background-color: var(--color-agent); } /* 기존 .agent (주황 계열) */
 .graphics-color { background-color: var(--color-graphics); } /* 기존 .npr (파랑 계열) */
 .hci-color      { background-color: var(--color-hci); }  /* 기존 .ce (초록 계열) */
 .haptics-color  { background-color: var(--color-haptics); }   /* 기존 .sv (노랑/라임 계열) */

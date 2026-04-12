@@ -14,7 +14,7 @@ const paperData = [
     year: "2026",
     selected: true,
     venue_type: "top",
-    topics: ["graphics", "all"],
+    topics: ["agent","ar-vr", "all"],
     name: "Role-Aware Virtual Agents for Navigational Interaction guided by a Multimodal Large Language Model",
     author: "<strong>Minyoung Kim</strong>, Changyang Li, Cuong Nguyen, Lap-Fai Yu",
     booktitle: "ACM SIGGRAPH (Conditionally accepted)",
@@ -25,7 +25,7 @@ const paperData = [
     video: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/"
   },
       {
-    id: "ismar25craft",
+    id: "ismar25demo",
     year: "2025",
     selected: true,
     venue_type: "others",
@@ -106,7 +106,7 @@ const paperData = [
     topics: ["haptics", "ar-vr", "all"],
     name: "Haptic Interfaces for Tangible Digital Painting in VR",
     author: "<strong>Minyoung Kim</strong> and Young J. Kim",
-    booktitle: "Pacific Graphics",
+    booktitle: "Korea Computer Graphics Society (KCSG) Journal",
     teaser: "data\\images\\teaser\\haptingpainting-teaser.png",
     url: "http://graphics.ewha.ac.kr/hvrpaint/",
     paper: "http://journal.cg-korea.org/archive/view_article?pid=jkcgs-26-2-1",
