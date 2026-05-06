@@ -17,12 +17,12 @@ const paperData = [
     topics: ["agent","ar-vr", "all"],
     name: "Role-Aware Virtual Agents for Navigational Interaction guided by a Multimodal Large Language Model",
     author: "<strong>Minyoung Kim</strong>, Changyang Li, Cuong Nguyen, Lap-Fai Yu",
-    booktitle: "ACM SIGGRAPH (Conditionally accepted)",
-    teaser: "data\\images\\teaser\\comingsoon.png",
-    url: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/",
-    paper: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/",
-    supp: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/",
-    video: "https://minyoung-mia-kim.github.io/projects/sig26RoleAware/"
+    booktitle: "ACM Transactions on Graphics (Proceeding of SIGGRAPH)",
+    teaser: "projects/sig26arllms/static/images/teaser.png",
+    url: "https://minyoung-mia-kim.github.io/projects/sig26arllms/",
+    paper: "https://minyoung-mia-kim.github.io/projects/sig26arllms/",
+    supp: "https://minyoung-mia-kim.github.io/projects/sig26arllms/",
+    video: "https://minyoung-mia-kim.github.io/projects/sig26arllms/"
   },
       {
     id: "ismar25demo",
@@ -61,7 +61,7 @@ const paperData = [
     topics: ["ar-vr", "graphics", "all"],
     name: "Dragon’s Path: Synthesizing User-Centered Flying Creature Animation Paths for Outdoor Augmented Reality Experiences",
     author: "<strong>Minyoung Kim</strong>, Rawan Alghofaili, Changyang Li, Lap-Fai Yu",
-    booktitle: "ACM SIGGRAPH",
+    booktitle: "In SIGGRAPH Conference Paper",
     teaser: "data\\images\\teaser\\sig24ardragon.jpg",
     url: "https://minyoung-mia-kim.github.io/projects/sig24ardragon/index.html",
     paper: "https://minyoung-mia-kim.github.io/projects/sig24ardragon/static/pdfs/main.pdf",
