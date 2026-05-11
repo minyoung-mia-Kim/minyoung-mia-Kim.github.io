@@ -50,7 +50,7 @@ const paperData = [
     teaser: "data\\images\\teaser\\llm_activity.jpg",
     url: "https://minyoung-mia-kim.github.io/projects/ismar25Crafting/index.html",
     paper: "https://minyoung-mia-kim.github.io/projects/ismar25Crafting/static/pdfs/main.pdf",
-    supp: "https://minyoung-mia-kim.github.io/projects/ismar25Crafting/static/pdfs/supp.pdf",
+    supp: "#",
     video: "https://youtu.be/taut6QQVEio"
   },
   {
