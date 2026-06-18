@@ -22,7 +22,7 @@ const paperData = [
     url: "https://minyoung-mia-kim.github.io/projects/sig26arllms/",
     paper: "https://minyoung-mia-kim.github.io/projects/sig26arllms/",
     supp: "https://minyoung-mia-kim.github.io/projects/sig26arllms/",
-    video: "https://minyoung-mia-kim.github.io/projects/sig26arllms/"
+    video: "https://youtu.be/4CIrrRyWVkY?si=VhBdtTtKLcJYaNua"
   },
       {
     id: "ismar25demo",

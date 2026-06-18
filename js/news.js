@@ -1,9 +1,9 @@
 const newsData = [
-  //   {
-  //   month: "May",
-  //   year: "2026",
-  //   details: `Started my internship at Dolby Research (Sunnyvale) working with Mark Hollar.`
-  // },
+    {
+    month: "May",
+    year: "2026",
+    details: `Started my internship at Dolby Research (Sunnyvale) working with Mark Hollar.`
+  },
       {
     month: "Mar",
     year: "2026",
