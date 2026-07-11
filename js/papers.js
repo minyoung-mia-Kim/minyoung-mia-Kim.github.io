@@ -20,8 +20,8 @@ const paperData = [
     booktitle: "ACM Transactions on Graphics (Proceeding of SIGGRAPH)",
     teaser: "projects/sig26arllms/static/images/teaser.png",
     url: "https://minyoung-mia-kim.github.io/projects/sig26arllms/",
-    paper: "https://minyoung-mia-kim.github.io/projects/sig26arllms/",
-    supp: "https://minyoung-mia-kim.github.io/projects/sig26arllms/",
+    paper: "https://dl.acm.org/doi/10.1145/3811319",
+    supp: "https://minyoung-mia-kim.github.io/projects/sig26arllms/static/pdfs/sig26arllmsSupp.pdf",
     video: "https://youtu.be/4CIrrRyWVkY?si=VhBdtTtKLcJYaNua"
   },
       {
