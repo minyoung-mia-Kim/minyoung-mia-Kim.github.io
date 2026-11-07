@@ -59,6 +59,7 @@
   .video { position: relative; aspect-ratio: 16 / 9; background: #000; }
   .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   .videos2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .videos2.stack { grid-template-columns: 1fr; }
   .videos2 .cap, figure figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; line-height: 1.45; }
 
   .gallery { display: grid; gap: 14px; margin-top: 22px; }
@@ -137,12 +138,13 @@
       <div class="links"><a href="https://minyoung-mia-kim.github.io/projects/sig26arllms/">Project page</a><a href="https://dl.acm.org/doi/10.1145/3811319">Paper</a></div>
     </div>
   </div>
-  <div class="gallery g2">
-    <figure><img loading="lazy" src="img/role-teaser.jpg" alt="Agent and player on a campus path with a top-down map inset"><figcaption>The player points while the agent follows a role-conditioned route; the inset shows the paths from above.</figcaption></figure>
+  <div class="gallery g3">
+    <figure><img loading="lazy" src="img/role-playful.jpg" alt="Playful agent ahead of a participant on a campus path"><figcaption>Playful: stays ahead of the participant and lets itself be found.</figcaption></figure>
+    <figure><img loading="lazy" src="img/role-hostile.jpg" alt="Hostile agent retreating along a building"><figcaption>Hostile: retreats along the building to stay out of reach.</figcaption></figure>
+    <figure><img loading="lazy" src="img/role-supportive.jpg" alt="Supportive agent leading along a path"><figcaption>Supportive: leads the participant along the path.</figcaption></figure>
+  </div>
+  <div class="gallery">
     <figure><img loading="lazy" src="img/role-study.jpg" alt="Outdoor study keyframes and top-down trajectories for three roles"><figcaption>The same campus path under playful, hostile, and supportive roles: HoloLens 2 keyframes and the user and agent trajectories from above.</figcaption></figure>
-<figure><img loading="lazy" src="img/role-playful.jpg" alt="Playful agent ahead of a participant on a campus path"><figcaption>Playful: stays ahead of the participant and lets itself be found.</figcaption></figure>
-<figure><img loading="lazy" src="img/role-hostile.jpg" alt="Hostile agent retreating along a building"><figcaption>Hostile: retreats along the building to stay out of reach.</figcaption></figure>
-<figure><img loading="lazy" src="img/role-supportive.jpg" alt="Supportive agent leading along a path"><figcaption>Supportive: leads the participant along the path.</figcaption></figure>
   </div>
   <div class="gallery">
     <figure><img loading="lazy" src="img/role-overview.jpg" alt="System pipeline"><figcaption>A learned decision filter calls the language model only when the situation changes, and the model returns a destination and path weights for the planner.</figcaption></figure>
@@ -184,7 +186,7 @@
 <!-- 03 -->
 <section class="project" id="narrative">
   <div class="phead">
-    <div class="videos2">
+    <div class="videos2 stack">
       <div><div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/Gff1GD4E6Ug" title="Narrative-driven agent, highway session" allowfullscreen></iframe></div><div class="cap">Highway session</div></div>
       <div><div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/9L-SDnmNTnQ" title="Narrative-driven agent, gallery session" allowfullscreen></iframe></div><div class="cap">Gallery session</div></div>
     </div>
