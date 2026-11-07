@@ -130,10 +130,10 @@
       <div class="kicker"><b>01</b>2026</div>
       <h2>Role-Aware Virtual Agents</h2>
       <p class="venue">ACM Transactions on Graphics, presented at SIGGRAPH 2026</p>
-      <p>A virtual robot plays hide-and-seek with a person on an outdoor campus path. A multimodal language model reads the scene, the player's position, and a role instruction such as playful, hostile, or supportive, and chooses where the agent goes next. A path planner shapes the route so that the movement expresses the role. In an outdoor HoloLens 2 study with 27 participants, people perceived the same agent differently across role conditions.</p>
+      <p>The same virtual robot plays hide-and-seek on an outdoor campus path under three roles: playful, hostile, and supportive. For each move, a multimodal language model reads the scene, the player's position, and the role and picks the agent's next destination; a path planner then shapes the route to express the role. In an outdoor HoloLens 2 study with 27 participants, people perceived the agent differently from one role to the next.</p>
       <dl class="fields">
-        <dt>Role</dt><dd>Lead author. System design, language-model reasoning and decision filter, path planning, AR implementation, outdoor user study.</dd>
-        <dt>Medium</dt><dd>Outdoor AR, HoloLens 2, Unity, multimodal language model</dd>
+        <dt>Role</dt><dd>Lead author. I designed the system, built the language-model reasoning and the decision filter, implemented path planning and the AR application, and ran the outdoor user study.</dd>
+        <dt>Medium</dt><dd>I built it in Unity for outdoor AR on HoloLens 2, with a multimodal language model.</dd>
         <dt>With</dt><dd>Changyang Li, Cuong Nguyen, Lap-Fai Yu</dd>
       </dl>
       <div class="links"><a href="https://minyoung-mia-kim.github.io/projects/sig26arllms/">Project page</a><a href="https://dl.acm.org/doi/10.1145/3811319">Paper</a></div>
@@ -160,10 +160,10 @@
       <div class="kicker"><b>02</b>2024</div>
       <h2>Dragon's Path</h2>
       <p class="venue">ACM SIGGRAPH 2024 Conference Papers</p>
-      <p>A dragon swims, drinks, and sleeps at places around a campus pond while a viewer watches through an AR headset. A predictor trained on human ratings scores how well each outdoor location suits each action. An optimizer then connects the chosen locations with a continuous flight path that stays visible and readable from the viewer's position.</p>
+      <p>Standing by a campus pond with an AR headset, a viewer watches a dragon swim, drink, and sleep at spots that suit each action. A predictor trained on human ratings decides which spot suits which action, and an optimizer links the chosen spots with one continuous flight path that stays visible and readable from where the viewer stands.</p>
       <dl class="fields">
-        <dt>Role</dt><dd>Lead author. Annotation study, location compatibility predictor, path optimization, AR implementation, outdoor user study with 25 participants.</dd>
-        <dt>Medium</dt><dd>Outdoor AR, HoloLens 2, Unity, character animation, optimization</dd>
+        <dt>Role</dt><dd>Lead author. I ran the annotation study, built the location compatibility predictor and the path optimization, implemented the AR application, and ran the outdoor user study with 25 participants.</dd>
+        <dt>Medium</dt><dd>I built it in Unity for outdoor AR on HoloLens 2, with character animation and optimization.</dd>
         <dt>With</dt><dd>Rawan Alghofaili, Changyang Li, Lap-Fai Yu</dd>
         <dt>Press</dt><dd>Featured on <a href="https://www.youtube.com/watch?v=bVUmZRqHiX0&amp;t=131s">Good Morning America</a></dd>
       </dl>
@@ -192,10 +192,10 @@
       <div class="kicker"><b>03</b>In progress</div>
       <h2>Narrative-Driven Agent</h2>
       <p class="venue">Ready, State, Action (working title), planned submission to SIGGRAPH 2027</p>
-      <p>An interactive character advances a story in response to what the player does. A narrative-state planner trained on states extracted from films chooses the next interaction and state transition from the player's action and the story so far. A multimodal language model writes the character's dialogue and a spatial goal, and the character moves to that goal in the scene, so the interaction keeps a coherent arc from setup to resolution.</p>
+      <p>Each time the player acts, the story moves forward. From that action and the story so far, a narrative-state planner trained on states extracted from films picks the next interaction and state transition; a multimodal language model then writes the character's dialogue and a spatial goal, and the character moves to that goal in the scene. Across the session, the interaction keeps a coherent arc from setup to resolution.</p>
       <dl class="fields">
         <dt>Role</dt><dd>Lead author. I designed the narrative-state model, built the film-to-state data pipeline, and implemented the simulation, VR, and AR versions.</dd>
-        <dt>Medium</dt><dd>Simulation of the agent in a virtual environment, a VR example, and an AR mode that overlays only the characters on the physical space.</dd>
+        <dt>Medium</dt><dd>I built a simulation of the agent in a virtual environment, a VR example, and an AR mode that overlays only the characters on the physical space.</dd>
         <dt>With</dt><dd>Lap-Fai Yu</dd>
       </dl>
     </div>
@@ -220,8 +220,8 @@
       <p class="venue">Journal of the Korea Computer Graphics Society, 2020</p>
       <p>A painter works inside a 3D reconstruction of Van Gogh's <i>The Bedroom</i>, using a force-feedback stylus that renders contact with each surface as the brush touches it. The painted scene was then fabricated as a monochrome PLA print and a full-color print.</p>
       <dl class="fields">
-        <dt>Role</dt><dd>Lead author. Haptic rendering, collision detection between brush and surfaces, VR painting system. I painted the scene and produced both prints.</dd>
-        <dt>Medium</dt><dd>VR, force-feedback haptics, 3D printing</dd>
+        <dt>Role</dt><dd>Lead author. I implemented the haptic rendering, the collision detection between the brush and surfaces, and the VR painting system. I painted the scene and produced both prints.</dd>
+        <dt>Medium</dt><dd>I worked in VR with force-feedback haptics, then moved to 3D printing.</dd>
         <dt>With</dt><dd>Young J. Kim</dd>
         <dt>Award</dt><dd>Best Paper Award, Korea Computer Graphics Society, 2019</dd>
       </dl>
@@ -245,10 +245,10 @@
       <div class="kicker"><b>05</b>2021</div>
       <h2>Region-Controllable Face Synthesis</h2>
       <p class="venue">Computer Graphics International 2021</p>
-      <p>A generative model of 3D face geometry divides the face into semantic regions such as the nose, mouth, and cheeks. A graph neural network models how the regions depend on one another, so an artist can change one region while the rest of the face stays coherent.</p>
+      <p>An artist can reshape one part of a 3D face, such as the nose, mouth, or cheeks, while the rest of the face stays coherent. The generative model behind this divides face geometry into semantic regions, and a graph neural network models how the regions depend on one another.</p>
       <dl class="fields">
-        <dt>Role</dt><dd>Lead author. Model design, training, and evaluation.</dd>
-        <dt>Medium</dt><dd>3D face geometry, generative model, graph neural network</dd>
+        <dt>Role</dt><dd>Lead author. I designed, trained, and evaluated the model.</dd>
+        <dt>Medium</dt><dd>I worked with 3D face geometry, using a generative model and a graph neural network.</dd>
         <dt>With</dt><dd>Young J. Kim</dd>
       </dl>
       <div class="links"><a href="https://graphics.ewha.ac.kr/projects/details/localAE/">Project page</a><a href="http://graphics.ewha.ac.kr/localAE/assets/paper/CGI21_paper.pdf">Paper</a></div>
@@ -268,9 +268,9 @@
       <div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/taut6QQVEio" title="Crafting Dynamic Virtual Activities video" allowfullscreen></iframe></div>
       <div class="kicker"><b>C1</b>2025 · IEEE ISMAR</div>
       <h3>Crafting Dynamic Virtual Activities</h3>
-      <p>A multimodal language model writes multi-character activities for a 3D scene, such as darts in a living room or a restaurant service, and an optimizer places each character to fit the furniture and the others.</p>
+      <p>Given a 3D scene such as a living room or a restaurant, a multimodal language model writes activities for several characters at once, like a game of darts or a dinner service, and an optimizer places each character to fit the furniture and the others.</p>
       <dl class="fields">
-        <dt>Role</dt><dd>Co-author. Presented the paper at IEEE ISMAR 2025 in Daejeon.</dd>
+        <dt>Role</dt><dd>Co-author. I presented the paper at IEEE ISMAR 2025 in Daejeon.</dd>
         <dt>With</dt><dd>Changyang Li, Qingan Yan, Zhan Li, Yi Xu, Lap-Fai Yu</dd>
       </dl>
       <div class="links"><a href="https://minyoung-mia-kim.github.io/projects/ismar25Crafting/index.html">Project page</a><a href="https://minyoung-mia-kim.github.io/projects/ismar25Crafting/static/pdfs/main.pdf">Paper</a></div>
@@ -281,7 +281,7 @@
       <h3>Location-Aware Adaptation of AR Narratives</h3>
       <p>A branching AR story adapts to the city where it is played: the system assigns its characters and events to real locations that suit each scene.</p>
       <dl class="fields">
-        <dt>Role</dt><dd>Co-author. Presented the paper at ACM CHI 2023 in Hamburg.</dd>
+        <dt>Role</dt><dd>Co-author. I presented the paper at ACM CHI 2023 in Hamburg.</dd>
         <dt>With</dt><dd>Wanwan Li, Changyang Li, Haikun Huang, Lap-Fai Yu</dd>
       </dl>
       <div class="links"><a href="https://changyangli.github.io/projects/chi23navgraph/">Project page</a><a href="https://changyangli.github.io/assets/paper/chi23narratives.pdf">Paper</a></div>
@@ -292,7 +292,7 @@
       <h3>Multi-Player VR Marble Run</h3>
       <p>Two players build a marble run in a shared VR world and test how surface materials change the marble's motion, discussing friction and velocity through avatars and in-scene equations.</p>
       <dl class="fields">
-        <dt>Role</dt><dd>Co-author. Ran the live demo session at IEEE ISMAR 2025.</dd>
+        <dt>Role</dt><dd>Co-author. I ran the live demo session at IEEE ISMAR 2025.</dd>
         <dt>With</dt><dd>William Ranc, Thanh Nguyen, Liuchuan Yu, Yongqi Zhang, Haikun Huang, Lap-Fai Yu</dd>
       </dl>
       <div class="links"><a href="https://gmudcxr.wixsite.com/vr-planet">Project page</a><a href="https://craigyuyu.github.io/home/papers/ismar25demo.pdf">Paper</a></div>
