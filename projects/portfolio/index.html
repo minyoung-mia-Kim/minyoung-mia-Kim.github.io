@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minyoung Kim · Creative Portfolio</title>
+<meta name="description" content="Interactive characters and experiences in augmented and virtual reality.">
+<meta name="author" content="Minyoung Kim">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/x-icon" href="../../data/misc/hibiscus.ico">
+<style>
+  :root {
+    --accent: #500000;
+    --text: #1d1d1f;
+    --muted: #666;
+    --line: #e4e4e4;
+    --bg: #fff;
+    --card: #f7f6f4;
+    --max: 1180px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 Charter, "Iowan Old Style", Georgia, "Times New Roman", serif;
+  }
+  a { color: var(--accent); }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+  header.top { padding: 56px 0 32px; border-bottom: 1px solid var(--line); }
+  header.top h1 { font-size: 52px; line-height: 1.05; margin: 0 0 12px; color: var(--accent); }
+  header.top .name { font-size: 22px; margin: 0; }
+  header.top .sub { color: var(--muted); margin: 4px 0 0; }
+  header.top .meta { margin-top: 18px; font-size: 15px; color: var(--muted); }
+  header.top .meta a { margin-right: 18px; }
+
+  nav.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; padding: 36px 0 48px; }
+  nav.grid a { text-decoration: none; color: inherit; }
+  nav.grid .thumb { aspect-ratio: 5 / 3; overflow: hidden; background: var(--card); }
+  nav.grid .thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .25s; }
+  nav.grid a:hover .thumb img { transform: scale(1.04); }
+  nav.grid .num { font-size: 13px; color: var(--muted); margin-top: 8px; }
+  nav.grid .num b { color: var(--text); margin-right: 8px; }
+  nav.grid .t { font-weight: 700; line-height: 1.3; }
+
+  section.project { padding: 56px 0; border-top: 1px solid var(--line); }
+  .phead { display: grid; grid-template-columns: 1.55fr 1fr; gap: 40px; align-items: start; }
+  .phead .kicker { font-size: 14px; color: var(--muted); }
+  .phead .kicker b { color: var(--text); margin-right: 8px; }
+  .phead h2 { font-size: 32px; line-height: 1.15; margin: 4px 0 4px; color: var(--accent); }
+  .phead .venue { font-style: italic; margin: 0 0 14px; }
+  dl.fields { margin: 14px 0 0; display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; font-size: 16px; }
+  dl.fields dt { font-weight: 700; }
+  dl.fields dd { margin: 0; }
+  .links { margin-top: 16px; font-size: 15px; }
+  .links a { margin-right: 16px; }
+
+  .video { position: relative; aspect-ratio: 16 / 9; background: #000; }
+  .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .videos2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .videos2 .cap, figure figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; line-height: 1.45; }
+
+  .gallery { display: grid; gap: 14px; margin-top: 22px; }
+  .g2 { grid-template-columns: 1fr 1fr; }
+  .g3 { grid-template-columns: repeat(3, 1fr); }
+  figure { margin: 0; }
+  .gallery img { width: 100%; background: var(--card); }
+  .crop img { aspect-ratio: 16 / 9; object-fit: cover; }
+
+  h2.sec { font-size: 32px; line-height: 1.15; margin: 0 0 4px; color: var(--accent); }
+  .collab { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 18px; }
+  .collab .kicker { font-size: 14px; color: var(--muted); margin-top: 12px; }
+  .collab .kicker b { color: var(--text); margin-right: 8px; }
+  .collab h3 { font-size: 20px; line-height: 1.25; margin: 4px 0 8px; color: var(--accent); }
+  .collab p { font-size: 15px; margin: 0; }
+  .collab dl.fields { font-size: 14px; }
+  .collab .links { font-size: 14px; }
+
+  footer { padding: 40px 0 64px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 900px) {
+    nav.grid { grid-template-columns: repeat(2, 1fr); }
+    .phead { grid-template-columns: 1fr; gap: 20px; }
+    .videos2, .g2, .g3, .collab { grid-template-columns: 1fr; }
+    header.top h1 { font-size: 40px; }
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 0 16px; }
+    nav.grid { grid-template-columns: 1fr; }
+    .phead h2 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <h1>Creative Portfolio</h1>
+    <p class="name">Minyoung Kim</p>
+    <p class="sub">Interactive characters and experiences in augmented and virtual reality</p>
+    <div class="meta">
+      Ph.D. Candidate in Computer Science, George Mason University<br>
+      <a href="https://minyoung-mia-kim.github.io/">minyoung-mia-kim.github.io</a>
+      <a href="mailto:mkim229@gmu.edu">mkim229@gmu.edu</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<nav class="grid" aria-label="Projects">
+  <a href="#role-aware"><div class="thumb"><img src="img/role-teaser.jpg" alt="Role-aware agent on a campus path"></div><div class="num"><b>01</b>2026 · ACM TOG / SIGGRAPH</div><div class="t">Role-Aware Virtual Agents</div></a>
+  <a href="#dragon"><div class="thumb"><img src="img/dragon-teaser.jpg" alt="AR dragon by a pond"></div><div class="num"><b>02</b>2024 · SIGGRAPH</div><div class="t">Dragon's Path</div></a>
+  <a href="#narrative"><div class="thumb"><img src="img/narrative-thumb.jpg" alt="Characters in a bus-crash scene"></div><div class="num"><b>03</b>In progress</div><div class="t">Narrative-Driven Agent</div></a>
+  <a href="#painting"><div class="thumb"><img src="img/paint-vr2.jpg" alt="Van Gogh's Bedroom painted in VR"></div><div class="num"><b>04</b>2020 · KCGS Journal</div><div class="t">Haptic VR Painting and Fabrication</div></a>
+  <a href="#face"><div class="thumb"><img src="img/face-teaser.jpg" alt="Synthesized 3D faces"></div><div class="num"><b>05</b>2021 · CGI</div><div class="t">Region-Controllable Face Synthesis</div></a>
+  <a href="#crafting"><div class="thumb"><img src="img/craft-thumb.jpg" alt="Characters playing darts in a living room"></div><div class="num"><b>C1</b>2025 · IEEE ISMAR</div><div class="t">Crafting Dynamic Virtual Activities</div></a>
+  <a href="#narratives-ar"><div class="thumb"><img src="img/chi23-teaser.jpg" alt="AR characters placed across a city"></div><div class="num"><b>C2</b>2023 · ACM CHI</div><div class="t">Location-Aware AR Narratives</div></a>
+  <a href="#marble"><div class="thumb"><img src="img/marble-teaser.jpg" alt="Two avatars in a VR marble run"></div><div class="num"><b>C3</b>2025 · IEEE ISMAR Demo</div><div class="t">Multi-Player VR Marble Run</div></a>
+</nav>
+
+<!-- 01 -->
+<section class="project" id="role-aware">
+  <div class="phead">
+    <div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/4CIrrRyWVkY" title="Role-Aware Virtual Agents video" allowfullscreen></iframe></div>
+    <div>
+      <div class="kicker"><b>01</b>2026</div>
+      <h2>Role-Aware Virtual Agents</h2>
+      <p class="venue">ACM Transactions on Graphics, presented at SIGGRAPH 2026</p>
+      <p>A virtual robot plays hide-and-seek with a person on an outdoor campus path. A multimodal language model reads the scene, the player's position, and a role instruction such as playful, hostile, or supportive, and chooses where the agent goes next. A path planner shapes the route so that the movement expresses the role. In an outdoor HoloLens 2 study with 27 participants, people perceived the same agent differently across role conditions.</p>
+      <dl class="fields">
+        <dt>Role</dt><dd>Lead author. System design, language-model reasoning and decision filter, path planning, AR implementation, outdoor user study.</dd>
+        <dt>Medium</dt><dd>Outdoor AR, HoloLens 2, Unity, multimodal language model</dd>
+        <dt>With</dt><dd>Changyang Li, Cuong Nguyen, Lap-Fai Yu</dd>
+      </dl>
+      <div class="links"><a href="https://minyoung-mia-kim.github.io/projects/sig26arllms/">Project page</a><a href="https://dl.acm.org/doi/10.1145/3811319">Paper</a></div>
+    </div>
+  </div>
+  <div class="gallery g2">
+    <figure><img loading="lazy" src="img/role-teaser.jpg" alt="Agent and player on a campus path with a top-down map inset"><figcaption>The player points while the agent follows a role-conditioned route; the inset shows the paths from above.</figcaption></figure>
+    <figure><img loading="lazy" src="img/role-study.jpg" alt="Outdoor study keyframes and top-down trajectories for three roles"><figcaption>The same campus path under playful, hostile, and supportive roles: HoloLens 2 keyframes and the user and agent trajectories from above.</figcaption></figure>
+<figure><img loading="lazy" src="img/role-playful.jpg" alt="Playful agent ahead of a participant on a campus path"><figcaption>Playful: stays ahead of the participant and lets itself be found.</figcaption></figure>
+<figure><img loading="lazy" src="img/role-hostile.jpg" alt="Hostile agent retreating along a building"><figcaption>Hostile: retreats along the building to stay out of reach.</figcaption></figure>
+<figure><img loading="lazy" src="img/role-supportive.jpg" alt="Supportive agent leading along a path"><figcaption>Supportive: leads the participant along the path.</figcaption></figure>
+  </div>
+  <div class="gallery">
+    <figure><img loading="lazy" src="img/role-overview.jpg" alt="System pipeline"><figcaption>A learned decision filter calls the language model only when the situation changes, and the model returns a destination and path weights for the planner.</figcaption></figure>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="project" id="dragon">
+  <div class="phead">
+    <div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/PG0O3kgjNLU" title="Dragon's Path video" allowfullscreen></iframe></div>
+    <div>
+      <div class="kicker"><b>02</b>2024</div>
+      <h2>Dragon's Path</h2>
+      <p class="venue">ACM SIGGRAPH 2024 Conference Papers</p>
+      <p>A dragon swims, drinks, and sleeps at places around a campus pond while a viewer watches through an AR headset. A predictor trained on human ratings scores how well each outdoor location suits each action. An optimizer then connects the chosen locations with a continuous flight path that stays visible and readable from the viewer's position.</p>
+      <dl class="fields">
+        <dt>Role</dt><dd>Lead author. Annotation study, location compatibility predictor, path optimization, AR implementation, outdoor user study with 25 participants.</dd>
+        <dt>Medium</dt><dd>Outdoor AR, HoloLens 2, Unity, character animation, optimization</dd>
+        <dt>With</dt><dd>Rawan Alghofaili, Changyang Li, Lap-Fai Yu</dd>
+        <dt>Press</dt><dd>Featured on <a href="https://www.youtube.com/watch?v=bVUmZRqHiX0&amp;t=131s">Good Morning America</a></dd>
+      </dl>
+      <div class="links"><a href="https://minyoung-mia-kim.github.io/projects/sig24ardragon/index.html">Project page</a><a href="https://minyoung-mia-kim.github.io/projects/sig24ardragon/static/pdfs/main.pdf">Paper</a></div>
+    </div>
+  </div>
+  <div class="gallery">
+    <figure><img loading="lazy" src="img/dragon-teaser.jpg" alt="Dragon performing swim, drink, and sleep actions by a pond"></figure>
+  </div>
+  <div class="gallery g3 crop">
+    <figure><img loading="lazy" src="img/dragon-place1.jpg" alt="Viewer watching the dragon at an intersection"></figure>
+    <figure><img loading="lazy" src="img/dragon-place2.jpg" alt="Viewer watching the dragon on a lawn"></figure>
+    <figure><img loading="lazy" src="img/dragon-place3.jpg" alt="Viewer watching the dragon near trees"></figure>
+  </div>
+  <div class="gallery g2">
+    <figure><img loading="lazy" src="img/dragon-walking.jpg" alt="Flight paths from three viewpoints"><figcaption>The same storyline produces a different flight path for each of three viewer positions.</figcaption></figure>
+    <figure><img loading="lazy" src="img/dragon-overview.jpg" alt="System overview"><figcaption>A predictor scores each location for each action, and an optimizer connects the selected waypoints with a path that balances visibility, compatibility, distance, and smoothness.</figcaption></figure>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="project" id="narrative">
+  <div class="phead">
+    <div class="videos2">
+      <div><div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/Gff1GD4E6Ug" title="Narrative-driven agent, highway session" allowfullscreen></iframe></div><div class="cap">Highway session</div></div>
+      <div><div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/9L-SDnmNTnQ" title="Narrative-driven agent, gallery session" allowfullscreen></iframe></div><div class="cap">Gallery session</div></div>
+    </div>
+    <div>
+      <div class="kicker"><b>03</b>In progress</div>
+      <h2>Narrative-Driven Agent</h2>
+      <p class="venue">Ready, State, Action (working title), planned submission to SIGGRAPH 2027</p>
+      <p>An interactive character advances a story in response to what the player does. A narrative-state planner trained on states extracted from films chooses the next interaction and state transition from the player's action and the story so far. A multimodal language model writes the character's dialogue and a spatial goal, and the character moves to that goal in the scene, so the interaction keeps a coherent arc from setup to resolution.</p>
+      <dl class="fields">
+        <dt>Role</dt><dd>Lead author. I designed the narrative-state model, built the film-to-state data pipeline, and implemented the simulation, VR, and AR versions.</dd>
+        <dt>Medium</dt><dd>Simulation of the agent in a virtual environment, a VR example, and an AR mode that overlays only the characters on the physical space.</dd>
+        <dt>With</dt><dd>Lap-Fai Yu</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="gallery">
+    <figure><img loading="lazy" src="img/narrative-teaser.png" alt="Narrative-state planner and turn writer"><figcaption>One turn in a bus-crash scene. From the narrative state after turn t, the planner selects an interaction and a state transition. The turn writer realizes it as dialogue and a spatial goal, which places the character in the scene at turn t+1.</figcaption></figure>
+  </div>
+  <div class="gallery g2">
+    <figure><img loading="lazy" src="img/narrative-highway-still.jpg" alt="Highway session runtime view"><figcaption>Highway session, turn 7. The Captain tells the Sergeant the plan to stabilize the bus before entry.</figcaption></figure>
+    <figure><img loading="lazy" src="img/narrative-gallery-still.jpg" alt="Gallery session runtime view"><figcaption>Gallery session, turn 10. The Officer's goal to search the crates and the second room is achieved.</figcaption></figure>
+  </div>
+  <div class="gallery g2">
+    <figure><a href="img/narrative-gallery.png"><img loading="lazy" src="img/narrative-gallery.png" alt="Gallery session turn strip"></a><figcaption>Gallery session. A director, a detective, a curator, and an officer search for a missing bronze before the gallery opens.</figcaption></figure>
+    <figure><a href="img/narrative-highway.png"><img loading="lazy" src="img/narrative-highway.png" alt="Highway session turn strip"></a><figcaption>Highway session. A firefighter, a sergeant, and a captain coordinate the rescue of a child after a bus crash. Each panel pairs a rendered turn with dialogue, spatial goal, and the narrative graph; the timeline tracks how facts, goals, and conflicts appear and resolve.</figcaption></figure>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="project" id="painting">
+  <div class="phead">
+    <div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/A7WPSKVV8Rg" title="Haptic VR Painting video" allowfullscreen></iframe></div>
+    <div>
+      <div class="kicker"><b>04</b>2019–2020</div>
+      <h2>Haptic VR Painting and Fabrication</h2>
+      <p class="venue">Journal of the Korea Computer Graphics Society, 2020</p>
+      <p>A painter works inside a 3D reconstruction of Van Gogh's <i>The Bedroom</i>, using a force-feedback stylus that renders contact with each surface as the brush touches it. The painted scene then left the headset as physical objects: a monochrome PLA print and a full-color print.</p>
+      <dl class="fields">
+        <dt>Role</dt><dd>Lead author. Haptic rendering, collision detection between brush and surfaces, VR painting system. I painted the scene and produced both prints.</dd>
+        <dt>Medium</dt><dd>VR, force-feedback haptics, 3D printing</dd>
+        <dt>With</dt><dd>Young J. Kim</dd>
+        <dt>Award</dt><dd>Best Paper Award, Korea Computer Graphics Society, 2019</dd>
+      </dl>
+      <div class="links"><a href="https://graphics.ewha.ac.kr/projects/details/hvrpaint/">Project page</a><a href="http://journal.cg-korea.org/archive/view_article?pid=jkcgs-26-2-1">Paper</a></div>
+    </div>
+  </div>
+  <div class="gallery">
+    <figure><img loading="lazy" src="img/paint-vr2.jpg" alt="The Bedroom painted in VR"></figure>
+  </div>
+  <div class="gallery g2">
+    <figure><img loading="lazy" src="img/paint-pla.jpg" alt="Monochrome PLA print"><figcaption>Monochrome PLA print.</figcaption></figure>
+    <figure><img loading="lazy" src="img/paint-color.jpg" alt="Full-color print"><figcaption>Full-color print.</figcaption></figure>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="project" id="face">
+  <div class="phead">
+    <div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/yPOW7YOzyUs" title="Face synthesis video" allowfullscreen></iframe></div>
+    <div>
+      <div class="kicker"><b>05</b>2021</div>
+      <h2>Region-Controllable Face Synthesis</h2>
+      <p class="venue">Computer Graphics International 2021</p>
+      <p>A generative model of 3D face geometry divides the face into semantic regions such as the nose, mouth, and cheeks. A graph neural network models how the regions depend on one another, so an artist can change one region while the rest of the face stays coherent.</p>
+      <dl class="fields">
+        <dt>Role</dt><dd>Lead author. Model design, training, and evaluation.</dd>
+        <dt>Medium</dt><dd>3D face geometry, generative model, graph neural network</dd>
+        <dt>With</dt><dd>Young J. Kim</dd>
+      </dl>
+      <div class="links"><a href="https://graphics.ewha.ac.kr/projects/details/localAE/">Project page</a><a href="http://graphics.ewha.ac.kr/localAE/assets/paper/CGI21_paper.pdf">Paper</a></div>
+    </div>
+  </div>
+  <div class="gallery">
+    <figure><img loading="lazy" src="img/face-teaser.jpg" alt="Synthesized 3D faces with region edits"></figure>
+  </div>
+</section>
+
+<!-- Collaborations -->
+<section class="project" id="collaborations">
+  <h2 class="sec">Selected Collaborations</h2>
+  <p class="venue">Lab projects I co-authored and presented.</p>
+  <div class="collab">
+    <article id="crafting">
+      <div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/taut6QQVEio" title="Crafting Dynamic Virtual Activities video" allowfullscreen></iframe></div>
+      <div class="kicker"><b>C1</b>2025 · IEEE ISMAR</div>
+      <h3>Crafting Dynamic Virtual Activities</h3>
+      <p>A multimodal language model writes multi-character activities for a 3D scene, such as darts in a living room or a restaurant service, and an optimizer places each character to fit the furniture and the others.</p>
+      <dl class="fields">
+        <dt>Role</dt><dd>Co-author. Presented the paper at IEEE ISMAR 2025 in Daejeon.</dd>
+        <dt>With</dt><dd>Changyang Li, Qingan Yan, Zhan Li, Yi Xu, Lap-Fai Yu</dd>
+      </dl>
+      <div class="links"><a href="https://minyoung-mia-kim.github.io/projects/ismar25Crafting/index.html">Project page</a><a href="https://minyoung-mia-kim.github.io/projects/ismar25Crafting/static/pdfs/main.pdf">Paper</a></div>
+    </article>
+    <article id="narratives-ar">
+      <div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/32ZlTDLJwm4" title="Location-Aware AR Narratives video" allowfullscreen></iframe></div>
+      <div class="kicker"><b>C2</b>2023 · ACM CHI</div>
+      <h3>Location-Aware Adaptation of AR Narratives</h3>
+      <p>A branching AR story adapts to the city where it is played: the system assigns its characters and events to real locations that suit each scene.</p>
+      <dl class="fields">
+        <dt>Role</dt><dd>Co-author. Presented the paper at ACM CHI 2023 in Hamburg.</dd>
+        <dt>With</dt><dd>Wanwan Li, Changyang Li, Haikun Huang, Lap-Fai Yu</dd>
+      </dl>
+      <div class="links"><a href="https://changyangli.github.io/projects/chi23navgraph/">Project page</a><a href="https://changyangli.github.io/assets/paper/chi23narratives.pdf">Paper</a></div>
+    </article>
+    <article id="marble">
+      <div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/aGx3QvT4ow8" title="Multi-Player VR Marble Run video" allowfullscreen></iframe></div>
+      <div class="kicker"><b>C3</b>2025 · IEEE ISMAR Demo</div>
+      <h3>Multi-Player VR Marble Run</h3>
+      <p>Two players build a marble run in a shared VR world and test how surface materials change the marble's motion, discussing friction and velocity through avatars and in-scene equations.</p>
+      <dl class="fields">
+        <dt>Role</dt><dd>Co-author. Ran the live demo session at IEEE ISMAR 2025.</dd>
+        <dt>With</dt><dd>William Ranc, Thanh Nguyen, Liuchuan Yu, Yongqi Zhang, Haikun Huang, Lap-Fai Yu</dd>
+      </dl>
+      <div class="links"><a href="https://gmudcxr.wixsite.com/vr-planet">Project page</a><a href="https://craigyuyu.github.io/home/papers/ismar25demo.pdf">Paper</a></div>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">Minyoung Kim · <a href="https://minyoung-mia-kim.github.io/">minyoung-mia-kim.github.io</a> · <a href="mailto:mkim229@gmu.edu">mkim229@gmu.edu</a></div>
+</footer>
+
+</body>
+</html>
