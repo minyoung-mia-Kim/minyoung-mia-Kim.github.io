@@ -60,6 +60,7 @@
   .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   .videos2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .videos2.stack { grid-template-columns: 1fr; }
+  .phead figure img { width: 100%; display: block; }
   .videos2 .cap, figure figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; line-height: 1.45; }
 
   .gallery { display: grid; gap: 14px; margin-top: 22px; }
@@ -186,10 +187,7 @@
 <!-- 03 -->
 <section class="project" id="narrative">
   <div class="phead">
-    <div class="videos2 stack">
-      <div><div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/Gff1GD4E6Ug" title="Narrative-driven agent, highway session" allowfullscreen></iframe></div><div class="cap">Highway session</div></div>
-      <div><div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/9L-SDnmNTnQ" title="Narrative-driven agent, gallery session" allowfullscreen></iframe></div><div class="cap">Gallery session</div></div>
-    </div>
+    <figure><img src="img/narrative-teaser.png" alt="Narrative-state planner and turn writer"><figcaption>One turn in a bus-crash scene. From the narrative state after turn t, the planner selects an interaction and a state transition. The turn writer realizes it as dialogue and a spatial goal, which places the character in the scene at turn t+1.</figcaption></figure>
     <div>
       <div class="kicker"><b>03</b>In progress</div>
       <h2>Narrative-Driven Agent</h2>
@@ -202,16 +200,13 @@
       </dl>
     </div>
   </div>
-  <div class="gallery">
-    <figure><img loading="lazy" src="img/narrative-teaser.png" alt="Narrative-state planner and turn writer"><figcaption>One turn in a bus-crash scene. From the narrative state after turn t, the planner selects an interaction and a state transition. The turn writer realizes it as dialogue and a spatial goal, which places the character in the scene at turn t+1.</figcaption></figure>
+  <div class="gallery g2">
+    <figure><div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/Gff1GD4E6Ug" title="Narrative-driven agent, highway session" allowfullscreen></iframe></div><figcaption>Highway session video.</figcaption></figure>
+    <figure><div class="video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/9L-SDnmNTnQ" title="Narrative-driven agent, gallery session" allowfullscreen></iframe></div><figcaption>Gallery session video.</figcaption></figure>
   </div>
   <div class="gallery g2">
-    <figure><img loading="lazy" src="img/narrative-highway-still.jpg" alt="Highway session runtime view"><figcaption>Highway session, turn 7. The Captain tells the Sergeant the plan to stabilize the bus before entry.</figcaption></figure>
-    <figure><img loading="lazy" src="img/narrative-gallery-still.jpg" alt="Gallery session runtime view"><figcaption>Gallery session, turn 10. The Officer's goal to search the crates and the second room is achieved.</figcaption></figure>
-  </div>
-  <div class="gallery g2">
-    <figure><a href="img/narrative-gallery.png"><img loading="lazy" src="img/narrative-gallery.png" alt="Gallery session turn strip"></a><figcaption>Gallery session. A director, a detective, a curator, and an officer search for a missing bronze before the gallery opens.</figcaption></figure>
-    <figure><a href="img/narrative-highway.png"><img loading="lazy" src="img/narrative-highway.png" alt="Highway session turn strip"></a><figcaption>Highway session. A firefighter, a sergeant, and a captain coordinate the rescue of a child after a bus crash. Each panel pairs a rendered turn with dialogue, spatial goal, and the narrative graph; the timeline tracks how facts, goals, and conflicts appear and resolve.</figcaption></figure>
+    <figure><a href="img/narrative-highway.png"><img loading="lazy" src="img/narrative-highway.png" alt="Highway session turn strip"></a><figcaption>Highway session. A firefighter, a sergeant, and a captain coordinate the rescue of a child after a bus crash.</figcaption></figure>
+    <figure><a href="img/narrative-gallery.png"><img loading="lazy" src="img/narrative-gallery.png" alt="Gallery session turn strip"></a><figcaption>Gallery session. A director, a detective, a curator, and an officer search for a missing bronze before the gallery opens. Each panel pairs a rendered turn with dialogue, spatial goal, and the narrative graph; the timeline tracks how facts, goals, and conflicts appear and resolve.</figcaption></figure>
   </div>
 </section>
 
@@ -223,7 +218,7 @@
       <div class="kicker"><b>04</b>2019–2020</div>
       <h2>Haptic VR Painting and Fabrication</h2>
       <p class="venue">Journal of the Korea Computer Graphics Society, 2020</p>
-      <p>A painter works inside a 3D reconstruction of Van Gogh's <i>The Bedroom</i>, using a force-feedback stylus that renders contact with each surface as the brush touches it. The painted scene then left the headset as physical objects: a monochrome PLA print and a full-color print.</p>
+      <p>A painter works inside a 3D reconstruction of Van Gogh's <i>The Bedroom</i>, using a force-feedback stylus that renders contact with each surface as the brush touches it. The painted scene was then fabricated as a monochrome PLA print and a full-color print.</p>
       <dl class="fields">
         <dt>Role</dt><dd>Lead author. Haptic rendering, collision detection between brush and surfaces, VR painting system. I painted the scene and produced both prints.</dd>
         <dt>Medium</dt><dd>VR, force-feedback haptics, 3D printing</dd>
